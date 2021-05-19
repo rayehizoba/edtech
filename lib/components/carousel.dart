@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:edtech/common/colors.dart';
 import 'package:edtech/components/space_x.dart';
 import 'package:edtech/components/space_y.dart';
 import 'package:flutter/material.dart';
@@ -79,7 +80,7 @@ class Pagination extends StatelessWidget {
           width: lerpDouble(16, 6, t),
           height: 6.0,
           decoration: BoxDecoration(
-              color: Color.lerp(Color(0xff65aaea), Color(0xffd5d4d4), t),
+              color: Color.lerp(UtilityColor.secondary, Color(0xffd5d4d4), t),
               borderRadius: BorderRadius.all(Radius.circular(6))),
         );
       },

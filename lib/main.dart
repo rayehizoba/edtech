@@ -1,7 +1,7 @@
 import 'package:edtech/pages/intro_page.dart';
 import 'package:flutter/material.dart';
 
-import 'common/app_theme.dart';
+import 'common/theme_data.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,12 +16,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Edtech',
-      theme: appTheme,
-      home: Scaffold(
-        body: SafeArea(
-          child: IntroPage(),
-        ),
-      ),
+      theme: themeData,
+      home: IntroPage(),
 //      home: new GestureDetector(
 //        onTap: () {
 //          _hideSoftKeyboard(context);
@@ -41,5 +37,20 @@ class MyApp extends StatelessWidget {
 //        ),
 //      ),
     );
+  }
+}
+
+class ThemeViewer extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final route = IntroPage.routeName;
+
+    switch (route) {
+      case IntroPage.routeName:
+        return IntroPage();
+
+      default:
+        return Container();
+    }
   }
 }
