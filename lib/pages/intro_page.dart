@@ -37,13 +37,13 @@ class _IntroPageState extends State<IntroPage> {
 
   final PageController _carouselController = PageController(initialPage: 0);
 
-  void _handleCarouselPageChanged(int page) {
+  void _handleChangedCarouselPage(int page) {
     setState(() {
       _carouselPage = page;
     });
   }
 
-  void _handlePressedNext() {
+  void _handlePressedBtnNext() {
     if (_carouselController.page < carouselData.length - 1) {
       _carouselController.nextPage(
           curve: Curves.fastOutSlowIn, duration: Duration(milliseconds: 500));
@@ -66,7 +66,6 @@ class _IntroPageState extends State<IntroPage> {
             child: Text('Skip'),
           ),
         ],
-        elevation: 0.0,
       ),
       body: SafeArea(
         child: Column(
@@ -92,7 +91,7 @@ class _IntroPageState extends State<IntroPage> {
                         ),
                       ]))
                   .toList(),
-              onPageChanged: _handleCarouselPageChanged,
+              onPageChanged: _handleChangedCarouselPage,
               controller: _carouselController,
             ),
             Padding(
@@ -101,7 +100,7 @@ class _IntroPageState extends State<IntroPage> {
                 height: 56,
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: _handlePressedNext,
+                  onPressed: _handlePressedBtnNext,
                   child: Text(_endReached ? 'Let\'s Start' : 'Next'),
                 ),
               ),

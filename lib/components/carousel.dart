@@ -46,7 +46,7 @@ class _CarouselState extends State<Carousel> {
             onPageChanged: widget.onPageChanged,
           )),
       // TODO: replace _isDelayed implementation with a cleaner one
-      // delays building Pagination by 300ms
+      // delays building Pagination for 300ms
       _isDelayed
           ? Pagination(
               length: widget.children.length,
@@ -80,7 +80,8 @@ class Pagination extends StatelessWidget {
           width: lerpDouble(16, 6, t),
           height: 6.0,
           decoration: BoxDecoration(
-              color: Color.lerp(UtilityColor.secondary, Color(0xffd5d4d4), t),
+              color:
+                  Color.lerp(UtilitySwatches.secondary, Color(0xffd5d4d4), t),
               borderRadius: BorderRadius.all(Radius.circular(6))),
         );
       },
