@@ -5,7 +5,7 @@ E-Learning Mobile Application Template. Built with Flutter.
 ## Screen Shots
 <img src="/docs/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20Max%20-%202021-05-19%20at%2014.21.32.png" alt="Intro Page" height="500">
 
-## Getting Started
+## Getting Started With Flutter
 
 This project is a starting point for a Flutter application.
 
