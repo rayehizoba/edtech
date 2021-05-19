@@ -2,7 +2,7 @@
 
 A new Flutter project.
 
-<img src="/docs/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20Max%20-%202021-05-19%20at%2014.21.32.png" alt="Intro Page" height="300">
+<img src="/docs/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20Max%20-%202021-05-19%20at%2014.21.32.png" alt="Intro Page" height="350">
 
 ## Getting Started
 
