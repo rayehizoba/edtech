@@ -56,6 +56,8 @@ flutter:
     - assets/images/Cool Kids High Tech.png
     - assets/images/Cool Kids Long Distance Relationship.png
     - assets/images/Cool Kids Staying Home.png
+    - assets/images/icon_back.png
+    - assets/images/icon_play.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

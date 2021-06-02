@@ -88,6 +88,7 @@ class _IntroPageState extends State<IntroPage> {
                                 textAlign: TextAlign.center,
                                 style: Theme.of(context).textTheme.bodyText2)
                           ],
+                          crossAxisAlignment: CrossAxisAlignment.center,
                         ),
                       ]))
                   .toList(),

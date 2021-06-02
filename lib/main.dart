@@ -1,4 +1,6 @@
+import 'package:edtech/pages/course_lesson_page.dart';
 import 'package:edtech/pages/intro_page.dart';
+import 'package:edtech/pages/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'common/theme_data.dart';
@@ -43,11 +45,17 @@ class MyApp extends StatelessWidget {
 class ThemeViewer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final route = IntroPage.routeName;
+    final route = CourseLessonPage.routeName;
 
     switch (route) {
       case IntroPage.routeName:
         return IntroPage();
+
+      case CourseLessonPage.routeName:
+        return CourseLessonPage();
+
+      case SplashScreen.routeName:
+        return SplashScreen();
 
       default:
         return Container();
